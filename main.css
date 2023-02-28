@@ -164,7 +164,7 @@ input:focus{
 @media only screen and (max-width:600px){
     body{
         background-image: url(images/bg-main-mobile.png);
-        background-size: 100% 35%;
+        background-size: 600px 35%;
         width: 30rem;
         height: 55rem;
         display: flex;
@@ -237,6 +237,10 @@ input:focus{
     }
     .newArea{
         height: 22rem;
+    }
+    .newPhrase{
+        width: 25rem;
+        margin-left: 3rem;
     }
     footer{
         margin-left: -1rem;
