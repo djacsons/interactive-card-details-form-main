@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="cards">
+      <div class="cardFront">
+
+
+        <div class="frontText">
+          <img src="images/card-logo.svg" alt="card-logo" width="20%" style="margin-top: 1rem;">
+          <br>
+          <p class="cardNumber" id="cardNumber">0000 0000 0000 0000</p>
+
+          <div class="cardNameInfo">
+            <p class="cardName" id="cardName">Jane Appleseed</p>
+            <div class="cardEx" style="display:flex;align-self: center;"><div class="cardMonth" id="cardMonth">00</div>/<div class="cardYear" id="cardYear">00</div></div> 
+          </div>
+          
+          
+        </div>
+
+      </div>
+      <div class="cardBack">
+        <p class="cardCVC" id="cardCVC">000</p>
+      </div>
+    </div>
+
+    <div class="form">
+      
+      <p class="formText">CARDHOLDER NAME</p>
+      <input id = "cardNameInput" type="text" placeholder="  e.g. Jane Appleseed" title="Cardholder Name" style = "width: 100%; height: 10%;">
+      
+      <br>
+      <p class="formText">CARD NUMBER</p>
+      <input id = "cardNumInput" type="text" placeholder="  e.g. 1234 5678 9123 0000" maxlength="20" style = "width: 100%; height: 10%;">
+      <div class="cardNumError errors invisible">Wrong format, numbers only</div>
+
+      <br>
+      
+      <div class="formTextBack">
+        <div class="exDate">EXP.DATE (MM/YY)</div>
+        <div class="CVC">CVC</div>
+      </div>
+
+      <div class="formBottom">
+        <input id = "cardMonthInput" type="text" placeholder="MM" maxlength="2" style="width:20%; height: 100%;" >
+        <input id = "cardYearInput" type="text" placeholder="YY" maxlength="2" style="width:20%; height: 100%;" >
+        <input id = "cardCVCInput" type="text" placeholder="e.g. 123" maxlength="3" style="width:45%; height: 100%;">
+      </div>
+      <div class="blankErrors">
+        <div class="exDateError errors invisible">Can't be blank</div>
+        <div class="CVCDateError errors invisible">Can't be blank</div>
+      </div>
+      <br>
+      <button id="confirmBtn" onclick="confirmBtn()">Confirm</button>
+      
+
+  <!-- Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+  -->
+    </div>
+
+  </main>
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Djacson Stvil</a>.
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>

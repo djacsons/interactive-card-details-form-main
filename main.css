@@ -1,0 +1,234 @@
+body{
+    font-size: 18px;
+    background-image: url(images/bg-main-desktop.png);
+    background-size: 30rem 1980px;
+    background-repeat:no-repeat;
+    width: 90rem;
+    font-family: Space Grotesk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50rem;
+    width: 90rem;
+    
+}
+.cards{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    grid-row-gap: 2rem;
+}
+.cardFront{
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.cardBack{
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    justify-content: flex-end;
+}
+.frontText{
+    width: 25rem;
+    height: 14rem;
+    font-size: 18px;
+    margin-left: 10rem;
+    margin-bottom: 0;
+    margin-top: 9.5rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+}
+.cardNameInfo{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    align-items: center;
+    height: 2rem;
+    margin-top: .5rem;
+}
+.cardNumber{
+    width: 100%;
+    height: 2rem;
+    font-size: 30px;
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: 500;
+    margin-bottom: 1;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    letter-spacing: .2rem;
+}
+.cardCVC{
+    margin-right: 3rem;
+    margin-top: 7rem;
+    color: white;
+    font-weight: 500;
+}
+
+.form{
+    width: 25rem;
+    height: 25rem;
+    justify-self: center;
+    align-self: center;
+    margin-right: 7rem;
+}
+.formBottom{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+.formText{
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: .5rem;
+}
+.formTextBack{
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+#confirmBtn{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    width: 100%;
+    height: 15%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid;
+}
+input:focus{
+    border: 2px solid hsl(249, 99%, 64%) 
+}
+.wrongInput:focus{
+    border-color: hsl(0, 100%, 66%);
+}
+.blankErrors{
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    height: 1rem;
+}
+.errors{
+    margin-top:.7rem;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+.invisible{
+    visibility: hidden;
+}
+.newLogo{
+    height: 25%;
+    width: 25%;
+}
+.newHead{
+    color:hsl(278, 68%, 11%);
+    margin: 0;
+    letter-spacing: .3rem;
+}
+.newPhrase{
+    margin-top: -2rem;
+    color: hsl(279, 6%, 55%);
+    font-size: 21px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.newButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-image: url(images/bg-main-mobile.png);
+        background-size: 100% 40%;
+        width: 30rem;
+        height: 58rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        justify-content: space-between;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 53rem;
+        width: 100%;
+        justify-content: space-between;
+        margin: 1rem;
+        margin-left: 9rem;
+        margin-top: 2rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+    }
+    .cardFront{
+        background-position: bottom left;
+        height: 100%;
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: -3rem;
+    }
+    .cardBack{
+        background-position: center center;
+        z-index: -1;
+        height: 15rem;
+        margin-top: -26rem;
+        margin-left: -2rem;
+    }
+    .frontText{
+        margin-left: 1.3rem;
+        margin-bottom: 0;
+        margin-top: 6rem;
+        height: 12rem;
+        
+    }
+    .cardCVC{
+        margin-right: 5rem;
+        margin-top: 6.7rem;
+    }
+    .form{
+        margin-top: 2rem;    
+        margin-right: 5rem;
+    }
+    #confirmBtn{
+        height: 18%;
+        margin-top: -2rem;
+    }
+    .formText{
+        letter-spacing: .2rem;
+    }
+    .newArea{
+        height: 22rem;
+    }
+    footer{
+        margin-left: 3rem;
+    }
+    
+}
